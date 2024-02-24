@@ -22,7 +22,7 @@ Criar, ler, alterar, apagar = lista[i] (CRUD)
 
 
 lista = [10, 20, 30, 40]
-print(lista)
+# print(lista)
 
 # # - adicionado
 # lista.append(50)
@@ -32,13 +32,19 @@ print(lista)
 # print(f"ultimo valor removido -> {lista.pop()}")
 
 # deletar por indice
-del lista[-1]
-print(lista)
-
-# limpar lista
-# lista.clear()
+# del lista[-1]
 # print(lista)
 
-# adicionando um valor por indice
-lista.insert(0, "numeros")
-print(lista)
+# # limpar lista
+# # lista.clear()
+# # print(lista)
+
+# # adicionando um valor por indice
+# lista.insert(0, "numeros")
+# print(lista)
+
+lista_A = [1, 2, 3, 4]
+lista_B = [5, 6, 7, 8]
+lista_C = lista_A + lista_B
+lista_A.extend()
+print(lista_C)
