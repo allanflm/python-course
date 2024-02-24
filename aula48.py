@@ -43,8 +43,22 @@ lista = [10, 20, 30, 40]
 # lista.insert(0, "numeros")
 # print(lista)
 
-lista_A = [1, 2, 3, 4]
-lista_B = [5, 6, 7, 8]
-lista_C = lista_A + lista_B
-lista_A.extend()
-print(lista_C)
+# lista_A = [1, 2, 3, 4]
+# lista_B = [5, 6, 7, 8]
+# lista_C = lista_A + lista_B
+# lista_A.extend()
+# print(lista_C)
+
+
+"""
+Dados mutaveis:
+ = - copiando o valor (imutavel)
+ = - aponta para o mesmo valor  na memoria (mutavel)
+"""
+
+lista_a = ["allan", "felipe", 1, True, 1.2]
+lista_b = lista_a.copy()
+
+lista_a[0] = "Qualquer coisa!"
+print(lista_a)
+print(lista_b)
