@@ -22,19 +22,39 @@
 # }
 # pessoa = dict(nome='Luiz Otávio', sobrenome='Miranda')
 
-pessoa = {
-    "nome": "Allan",
-    "sobrenome": "Felipe",
-    "idade": 20,
-    "peso": 1.89,
-    "endereços": [
-        {"rua": "Tal tal", "numero": 123},
-        {"rua": "Tal 2 tal 2", "numero": 123}]
-}
+# pessoa = {
+#     "nome": "Allan",
+#     "sobrenome": "Felipe",
+#     "idade": 20,
+#     "peso": 1.89,
+#     "endereços": [
+#         {"rua": "Tal tal", "numero": 123},
+#         {"rua": "Tal 2 tal 2", "numero": 123}]
+# }
 
+# print(pessoa)
+
+# print(pessoa["nome"])
+# print("--------")
+# for chave in pessoa:
+#     print(f"{chave} -> {pessoa[chave]}")
+
+
+# Manipulando chaves e valores em dicionários
+pessoa = {}
+
+chave = "nome"
+
+pessoa[chave] = "allan"
+pessoa["sobrenome"] = "Felipe"
+
+print(pessoa[chave])
+
+# del pessoa["sobrenome"]
 print(pessoa)
-
 print(pessoa["nome"])
-print("--------")
-for chave in pessoa:
-    print(f"{chave} -> {pessoa[chave]}")
+
+if pessoa.get("sobrenome") is None:
+    print("NAO EXITE")
+else:
+    print(pessoa["sobrenome"])
