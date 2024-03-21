@@ -8,6 +8,7 @@
 # O python conhece todos os módulos e pacotes presentes
 # nos caminhos de sys.path
 
-import aula97_m
-
+from aula97_m import soma, variavel_do_modulo
 print("Esse módulo se chama -> ", __name__)
+print(variavel_do_modulo)
+print(soma(9, 5))
